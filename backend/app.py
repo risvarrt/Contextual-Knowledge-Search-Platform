@@ -14,8 +14,8 @@ import certifi
 app = Flask(__name__)
 CORS(app)
 
-CONNECTION_STRING = "mongodb+srv://risvarrt:esL2FmMzdvyZxxPL@cluster.otyarm0.mongodb.net/"
-DB_NAME = "csci6409"
+CONNECTION_STRING = "Your value"
+DB_NAME = "Your value"
 COLLECTION_NAME = "chunks"
 persist_directory = 'docs/chroma/'
 
@@ -23,7 +23,7 @@ client = MongoClient(CONNECTION_STRING, tlsCAFile=certifi.where())
 db = client[DB_NAME]
 collection = db[COLLECTION_NAME]
 
-os.environ['COHERE_API_KEY'] = 'BxkzOCBZ9cHSwMWCxzbvOPKIEt84eLv6Fi2Py6mb'
+os.environ['COHERE_API_KEY'] = 'Your value'
 
 @app.route('/')
 def home():
